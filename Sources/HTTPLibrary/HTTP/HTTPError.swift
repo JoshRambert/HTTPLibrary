@@ -107,7 +107,7 @@ extension HTTPError.ResponseSerializationReason {
     var localizedDescription: String {
         switch self {
         case .jsonSerializationFailed(let error):
-            return "Failed to serialize JSON due to the following error: \n\(error.localizedDescription)"
+            return "Failed to serialize JSON due to the following error: \n\(error)"
         }
     }
 }
